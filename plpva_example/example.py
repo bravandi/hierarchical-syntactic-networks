@@ -65,6 +65,7 @@ def power_law(x, variable, subject, radius=0.5, number_of_sets=100):
     print("  Generation of %d power-law distributed synthetic data sets:" % number_of_sets)
     print("  * Fraction of data sets with worse KS statistic than the empirical data: p-value %g" % p)
     print("  * KS statistic of the empirical data: D %g" % gof)
+
     png = "plplot_" + subject
     plplot.plplot(x, xmin, alpha, variable, p, png)
     # plpva_example.plplot.plplot(x, xmin, alpha, variable, p, png)

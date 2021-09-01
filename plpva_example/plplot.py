@@ -120,7 +120,7 @@ def plplot(x, xmin, alpha, variable='x', p_value=None, png='plplot'):
     if p_value is not None:
         matplotlib.pyplot.text(x_text * xr[0], y_text[2] * yr[0], r'$p$-value $=%g$' % p_value, fontsize=14)
 
-    matplotlib.pyplot.savefig(png)
+    matplotlib.pyplot.savefig(png, dpi=200, pad_inches=0.2)
     # matplotlib.pyplot.show()
 
     return h
